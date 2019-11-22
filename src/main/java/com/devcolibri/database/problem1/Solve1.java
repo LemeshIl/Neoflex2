@@ -1,11 +1,9 @@
-package com.devcolibri.database;
+package com.devcolibri.database.problem1;
 
-
-import com.mysql.cj.x.protobuf.MysqlxCrud;
 
 import java.sql.*;
 
-public class Main2 {
+public class Solve1 {
 
     public static void main(String[] args) {
         String query = "SELECT* FROM users where id=4";
@@ -20,8 +18,8 @@ public class Main2 {
 
 
                 ResultSet resultSet = statement.executeQuery(query);
-                while (resultSet.next()){
-                    User user=new User();
+                while (resultSet.next()) {
+                    User user = new User();
                     user.setId(resultSet.getInt(1));
                     user.setName(resultSet.getString(2));
                     user.setAge(resultSet.getInt(3));

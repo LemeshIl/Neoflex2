@@ -1,4 +1,4 @@
-package com.devcolibri.database;
+package com.devcolibri.database.problem1;
 
 public class User {
     private int id;
