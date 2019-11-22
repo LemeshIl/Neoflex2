@@ -7,8 +7,6 @@ import java.sql.SQLException;
 public class DBWorker {
 
 
-
-
     public DBWorker() {
 
         try (
