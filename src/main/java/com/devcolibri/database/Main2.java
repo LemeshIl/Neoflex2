@@ -8,7 +8,7 @@ import java.sql.*;
 public class Main2 {
 
     public static void main(String[] args) {
-        String query = "SELECT* FROM users ";
+        String query = "SELECT* FROM users where id=4";
 
         try (Connection conn = DriverManager.getConnection(
                 "jdbc:mysql://localhost/mydbtest?useUnicode=" +
